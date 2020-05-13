@@ -1,27 +1,31 @@
 import React from 'react';
+import styled from 'styled-components';
 import { StyleSheet } from 'react-native';
 
+export const Container = styled.View`
+    height: 100px;
+    margin-bottom: 20px;
+`;
+
+export const TabItem = styled.View`
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 3px;
+    margin-left: 10px;
+    padding: 10px;
+    justify-content: space-between
+`;
+
+export const TabText = styled.Text`
+    font-size: 13px;
+    color: #FFF
+`;
+
 const styles = StyleSheet.create({
-    container: {
-        height: 100,
-        marginBottom: 20
-    },
     tabsContainer: {
         paddingLeft: 10,
         paddingRight: 20
-    },
-    tabItem: {
-        width: 100,
-        height: 100,
-        backgroundColor: 'rgba(255, 255, 255, .2)',
-        borderRadius: 3,
-        marginLeft: 10,
-        padding: 10,
-        justifyContent: 'space-between'
-    },
-    tabText: {
-        fontSize: 13,
-        color: '#FFF'
     }
 });
 

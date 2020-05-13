@@ -1,25 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        paddingTop: 40,
-        paddingBottom: 0,
-        paddingHorizontal: 0
-    },
-    top: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: 10
-    },
-    logo: { },
-    title: {
-        fontSize: 18,
-        color: '#FFF',
-        fontWeight: 'bold',
-        marginLeft: 8
-    }
-});
+export const Container = styled.View`
+    align-items: center;
+    padding: 40px 0 0 0;
+`;
 
-export default styles;
+export const Top = styled.View`
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+`;
+
+export const Title = styled.Text`
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 8px;
+`;

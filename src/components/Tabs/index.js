@@ -1,36 +1,36 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import Icon from '@expo/vector-icons/MaterialIcons';
-import styles from './styles';
+import styles, { Container, TabItem, TabText } from './styles';
 import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Main() {
     return (
-        <View style={styles.container}>
+        <Container>
             <ScrollView horizontal={true} 
                         showsHorizontalScrollIndicator={false}
                         contentContainerStyle={styles.tabsContainer}>
-                <View style={styles.tabItem}>
+                <TabItem>
                     <Icon name="person-add" size={24} color="#FFF" />
-                    <Text style={styles.tabText}>Indicar amigos</Text>
-                </View>
-                <View style={styles.tabItem}>
+                    <TabText>Indicar amigos</TabText>
+                </TabItem>
+                <TabItem>
                     <Icon name="chat-bubble-outline" size={24} color="#FFF" />
-                    <Text style={styles.tabText}>Cobrar</Text>
-                </View>
-                <View style={styles.tabItem}>
+                    <TabText>Cobrar</TabText>
+                </TabItem>
+                <TabItem>
                     <Icon name="arrow-downward" size={24} color="#FFF" />
-                    <Text style={styles.tabText}>Depositar</Text>
-                </View>
-                <View style={styles.tabItem}>
+                    <TabText>Depositar</TabText>
+                </TabItem>
+                <TabItem>
                     <Icon name="arrow-upward" size={24} color="#FFF" />
-                    <Text style={styles.tabText}>Transferir</Text>
-                </View>
-                <View style={styles.tabItem}>
+                    <TabText>Transferir</TabText>
+                </TabItem>
+                <TabItem>
                     <Icon name="lock" size={24} color="#FFF" />
-                    <Text style={styles.tabText}>Bloquear cartão</Text>
-                </View>
+                    <TabText>Bloquear cartão</TabText>
+                </TabItem>
             </ScrollView>
-        </View>
+        </Container>
     );
 }

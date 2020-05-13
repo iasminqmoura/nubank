@@ -1,55 +1,58 @@
 import React from 'react';
+import styled from 'styled-components';
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#8B10AE',
-        justifyContent: 'space-between'
-    },
-    content: {
-        flex: 1,
-        maxHeight: 400,
-        justifyContent: 'center'
-    },
-    card: {
-        flex: 1,
-        backgroundColor: '#FFF',
-        borderRadius: 4,
-        marginHorizontal: 20,
-        marginVertical: 0
-    },
-    cardHeader: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: 30
-    },
-    cardContent: {
-        flex: 1,
-        paddingVertical: 0,
-        paddingHorizontal: 30,
-        justifyContent: 'center',
-        marginBottom: 30
-    },
-    cardFooter: {
-        padding: 30,
-        backgroundColor: '#EEE',
-        borderRadius: 4
-    },
-    title: {
-        fontSize: 13,
-        color: '#999'
-    },
-    description: {
-        fontSize: 32,
-        marginTop: 3,
-        color: '#333'
-    },
-    annotation: {
-        fontSize: 13,
-        color: '#333'
-    }
-});
+export const Container = styled.View`
+    flex: 1;
+    background-color: #8B10AE;
+    justify-content: space-between;
+`;
 
-export default styles;
+export const Content = styled.View`
+    flex: 1;
+    max-height: 400px;
+    justify-content: center;
+`;
+
+export const Card = styled.View`
+    flex: 1;
+    background-color: #FFF;
+    border-radius: 4px;
+    margin: 0 20px;
+`;
+
+export const CardHeader = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+`;
+
+export const CardContent = styled.View`
+    flex: 1;
+    padding: 0 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+`;
+
+export const CardFooter = styled.View`
+    padding: 30px;
+    background-color: #EEE;
+    border-radius: 4px;
+`;
+
+export const Title = styled.Text`
+    font-size: 13px;
+    color: #999;
+`;
+
+export const Description = styled.Text`
+    font-size: 32px;
+    margin-top: 3px;
+    color: #333;
+`;
+
+export const Annotation = styled.Text`
+    font-size: 13px;
+    color: #333;
+`;

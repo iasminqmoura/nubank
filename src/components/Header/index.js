@@ -1,17 +1,17 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Icon from '@expo/vector-icons/MaterialIcons';
-import styles from './styles';
+import styles, { Container, Top, Title } from './styles';
 import logo from '../../../assets/Nubank_Logo.png';
 
 export default function Header() {
     return (
-        <View style={styles.container}>
-            <View style={styles.top}>
-                <Image style={styles.logo} source={logo} />
-                <Text style={styles.title}>Iasmin</Text>
-            </View>
+        <Container>
+            <Top>
+                <Image source={logo} />
+                <Title>Iasmin</Title>
+            </Top>
             <Icon name="keyboard-arrow-down" size={20} color="#FFF" />
-        </View>
+        </Container>
     );
 }
